@@ -211,8 +211,9 @@ bar {
 
     colors {
         statusline #ffffff
-        background #323232
-        inactive_workspace #323232 #323232 #5c5c5c
+        background #44475a
+        focused_workspace #44475a #6272a4 #f8f8f2
+        inactive_workspace #282a36 #282a36 #5c5c5c
     }
 }
 default_border pixel 2
