@@ -1,0 +1,47 @@
+[2023-08-26 15:15:10.238] [info]  Platform linux true
+[2023-08-26 15:15:10.257] [info]  Language setup start
+[2023-08-26 15:15:10.268] [info]  getStartMinimized undefined undefined
+[2023-08-26 15:15:10.270] [info]  Set Language Preference: undefined
+[2023-08-26 15:15:10.277] [info]  loginItemSettings { __zone_symbol__state: null, __zone_symbol__value: [] }
+[2023-08-26 15:15:10.282] [error] Failed to search for Lutris library location Error
+    at file:///tmp/.mount_WowUp-4cSHwu/resources/app.asar/dist/main.55fd2eac8df80218.js:1:1298343
+    at Generator.next (<anonymous>)
+    at yj (file:///tmp/.mount_WowUp-4cSHwu/resources/app.asar/dist/main.55fd2eac8df80218.js:1:742470)
+    at a (file:///tmp/.mount_WowUp-4cSHwu/resources/app.asar/dist/main.55fd2eac8df80218.js:1:742673)
+    at v.invoke (file:///tmp/.mount_WowUp-4cSHwu/resources/app.asar/dist/polyfills.3caedfc3913caa32.js:1:6573)
+    at Object.onInvoke (file:///tmp/.mount_WowUp-4cSHwu/resources/app.asar/dist/main.55fd2eac8df80218.js:1:672482)
+    at v.invoke (file:///tmp/.mount_WowUp-4cSHwu/resources/app.asar/dist/polyfills.3caedfc3913caa32.js:1:6513)
+    at M.run (file:///tmp/.mount_WowUp-4cSHwu/resources/app.asar/dist/polyfills.3caedfc3913caa32.js:1:1939)
+    at file:///tmp/.mount_WowUp-4cSHwu/resources/app.asar/dist/polyfills.3caedfc3913caa32.js:1:16783
+    at v.invokeTask (file:///tmp/.mount_WowUp-4cSHwu/resources/app.asar/dist/polyfills.3caedfc3913caa32.js:1:7191)
+[2023-08-26 15:15:10.282] [error] Failed to search for blizzard products Error: Lutris library not found
+    at file:///tmp/.mount_WowUp-4cSHwu/resources/app.asar/dist/main.55fd2eac8df80218.js:1:1297234
+    at Generator.next (<anonymous>)
+    at yj (file:///tmp/.mount_WowUp-4cSHwu/resources/app.asar/dist/main.55fd2eac8df80218.js:1:742470)
+    at a (file:///tmp/.mount_WowUp-4cSHwu/resources/app.asar/dist/main.55fd2eac8df80218.js:1:742673)
+    at v.invoke (file:///tmp/.mount_WowUp-4cSHwu/resources/app.asar/dist/polyfills.3caedfc3913caa32.js:1:6573)
+    at Object.onInvoke (file:///tmp/.mount_WowUp-4cSHwu/resources/app.asar/dist/main.55fd2eac8df80218.js:1:672482)
+    at v.invoke (file:///tmp/.mount_WowUp-4cSHwu/resources/app.asar/dist/polyfills.3caedfc3913caa32.js:1:6513)
+    at M.run (file:///tmp/.mount_WowUp-4cSHwu/resources/app.asar/dist/polyfills.3caedfc3913caa32.js:1:1939)
+    at file:///tmp/.mount_WowUp-4cSHwu/resources/app.asar/dist/polyfills.3caedfc3913caa32.js:1:16783
+    at v.invokeTask (file:///tmp/.mount_WowUp-4cSHwu/resources/app.asar/dist/polyfills.3caedfc3913caa32.js:1:7191)
+[2023-08-26 15:15:10.285] [info]  [GET] ./assets/i18n/en.json 200 5ms
+[2023-08-26 15:15:10.306] [info]  using locale en
+[2023-08-26 15:15:10.309] [info]  Cannot import wow installations, no agent path
+[2023-08-26 15:15:10.312] [info]  Language setup complete
+[2023-08-26 15:15:10.356] [info]  WowUpProtocolService 
+[2023-08-26 15:15:10.363] [info]  Creating app menu
+[2023-08-26 15:15:10.380] [info]  zoomPref undefined
+[2023-08-26 15:15:10.381] [info]  App menu created true
+[2023-08-26 15:15:10.382] [info]  Creating tray
+[2023-08-26 15:15:10.396] [info]  Tray created true
+[2023-08-26 15:15:10.418] [info]  Set Language Preference: en
+[2023-08-26 15:15:10.449] [info]  cmpRequired false
+[2023-08-26 15:15:10.589] [info]  IPC_APP_UPDATE_STATE app-update-state
+[2023-08-26 15:15:10.589] [info]  { state: 3 }
+[2023-08-26 15:15:12.938] [info]  { telemetry: true, wagoProvider: true }
+[2023-08-26 15:15:13.067] [info]  Set Language Preference: en
+[2023-08-26 15:15:13.407] [info]  Checking for addon updates...
+[2023-08-26 15:15:13.519] [info]  getCollapseToTray true
+[2023-08-26 15:15:13.521] [info]  Set Language Preference: en
+[2023-08-26 15:15:13.529] [info]  getStartMinimized undefined undefined
