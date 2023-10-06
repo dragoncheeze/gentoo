@@ -4,7 +4,6 @@
 #
 # Read `man 5 sway` for a complete reference.
 exec pulseaudio
-#exec wireplumber
 exec_always autotiling
 ### Variables
 #
