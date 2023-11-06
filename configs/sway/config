@@ -88,6 +88,8 @@ output * bg ~/builds/wallpaper/gentoo.png fill mode 1920x1080@75Hz
 #
 # Moving around:
 #
+    bindsym $mod+y border normal
+    bindsym $mod+Shift+y border pixel 2
     # Move your focus around
     bindsym $mod+$left focus left
     bindsym $mod+$down focus down
