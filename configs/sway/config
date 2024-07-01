@@ -1,7 +1,7 @@
 # Default config for sway
 #
 # Copy this to ~/.config/sway/config and edit it to your liking.
-#
+seat seat0 xcursor_theme Adwaita 24
 # Read `man 5 sway` for a complete reference.
 exec pulseaudio -D
 exec_always autotiling
@@ -20,7 +20,7 @@ set $term foot
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 set $menu rofi -show drun -show-icons
-output * bg ~/builds/wallpaper/gentoo.png fill mode 1920x1080@75Hz
+output * bg ~/builds/dotfiles/minimal-wallpaper/outrun.jpg fill mode 1920x1080@75Hz
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
@@ -65,7 +65,9 @@ output * bg ~/builds/wallpaper/gentoo.png fill mode 1920x1080@75Hz
     # Start a terminal
     bindsym $mod+Return exec $term
     bindsym $mod+n exec thunar
+    bindsym $mod+g exec flatpak run net.lutris.Lutris
     bindsym $mod+b exec flatpak run com.brave.Browser
+    bindsym $mod+Shift+b exec firefox-bin
 
     # Kill focused window
     bindsym $mod+x kill
@@ -84,7 +86,7 @@ output * bg ~/builds/wallpaper/gentoo.png fill mode 1920x1080@75Hz
     bindsym $mod+Shift+r reload
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+q exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+    bindsym $mod+Shift+q exec swaymsg exit
 #
 # Moving around:
 #
@@ -206,21 +208,21 @@ bindsym $mod+r mode "resize"
 # Read `man 5 sway-bar` for more information about this section.
 bar {
     position top
-
+    font pango:monospace 16
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
     status_command while date +'%a-%b-%d %l:%M %p'; do sleep 1; done
 
     colors {
         statusline #ffffff
-        background #44475a
-        focused_workspace #44475a #6272a4 #f8f8f2
-        inactive_workspace #282a36 #282a36 #5c5c5c
+        background #000000
+        focused_workspace #77dd77 #200689 #ffffff
+        inactive_workspace #000000 #222222 #ffffff
     }
 }
-default_border pixel 2
-default_floating_border pixel 2
-gaps inner 5
+default_border pixel 5
+default_floating_border pixel 4
+gaps inner 10
 gaps outer 0
 include /etc/sway/config.d/*
 include ~/.config/sway/conf.d/*
