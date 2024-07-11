@@ -91,7 +91,7 @@ output * bg ~/builds/dotfiles/minimal-wallpaper/outrun.jpg fill mode 1920x1080@7
 # Moving around:
 #
     bindsym $mod+y border normal
-    bindsym $mod+Shift+y border pixel 2
+    bindsym $mod+Shift+y border pixel 5
     # Move your focus around
     bindsym $mod+$left focus left
     bindsym $mod+$down focus down
