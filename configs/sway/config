@@ -1,7 +1,7 @@
 # Default config for sway
 
 seat seat0 xcursor_theme Adwaita 24
-exec pulseaudio -D
+exec gentoo-pipewire-launcher restart & 
 exec_always autotiling
 
 set $mod Mod4
