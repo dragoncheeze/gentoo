@@ -6,6 +6,8 @@
 // Input device configuration.
 // Find the full list of options on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Input
+prefer-no-csd
+
 input {
     keyboard {
         xkb {
@@ -257,7 +259,7 @@ layout {
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "waybar"
 spawn-at-startup "xwayland-satellite"
-spawn-at-startup "sh" "-c" "gentoo-pipewire-launcher restart"
+spawn-at-startup "sh" "-c" "gentoo-pipewire-launcher restart & dbus-update-activation-environment --all"
 spawn-at-startup "sh" "-c" "swaybg -i ~/builds/gentoo/wallpaper/outrun.jpg"
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
@@ -341,7 +343,7 @@ binds {
 
     // Mod-Shift-/, which is usually the same as Mod-?,
     // shows a list of important hotkeys.
-    Mod+Shift+Slash { show-hotkey-overlay; }
+   // Mod+Shift+Slash { show-hotkey-overlay; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return hotkey-overlay-title="Open a Terminal: alacritty" { spawn "foot"; }
@@ -369,7 +371,7 @@ binds {
 
     Mod+X { close-window; }
 
-    Mod+B { spawn "brave"; }
+    Mod+B { spawn "flatpak" "run" "com.brave.Browser"; }
     Mod+N { spawn "thunar"; }
 
     Mod+Left  { focus-column-left; }
@@ -527,6 +529,7 @@ binds {
     Mod+Ctrl+R { reset-window-height; }
     Mod+F { maximize-column; }
     Mod+Shift+F { fullscreen-window; }
+    Mod+Ctrl+Shift+F { toggle-windowed-fullscreen; } 
 
     // Expand the focused column to space not taken up by other fully visible columns.
     // Makes the column "fill the rest of the space".
@@ -593,4 +596,7 @@ binds {
 }
 environment {
 	DISPLAY ":0"
+}
+hotkey-overlay {
+	skip-at-startup
 }
