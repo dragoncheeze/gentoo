@@ -1,6 +1,7 @@
 # Default config for sway
 
 seat seat0 xcursor_theme Adwaita 24
+exec /usr/libexec/polkit-gnome-authentication-agent-1
 exec gentoo-pipewire-launcher restart & 
 exec_always autotiling
 
@@ -13,9 +14,9 @@ set $right l
 
 set $term foot
 
-set $menu rofi -show drun -show-icons
+set $menu fuzzel 
 
-output * bg ~/builds/gentoo/wallpaper/outrun.jpg fill mode 1920x1080@75Hz max_render_time 5
+output * bg ~/builds/gentoo/wallpaper/outrun.jpg fill mode 1920x1080@75Hz max_render_time 8
 
 ### Key bindings
 #
