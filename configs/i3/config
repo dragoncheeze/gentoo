@@ -11,11 +11,9 @@ default_floating_border pixel 5
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id /usr/libexec/polkit-gnome-authentication-agent-1
 exec --no-startup-id picom
-exec --no-startup-id pipewire
-exec --no-startup-id pipewire-pulse
-exec --no-startup-id wireplumber
+exec --no-startup-id gentoo-pipewire-launcher restart &
 exec_always --no-startup-id autotiling
-exec --no-startup-id feh --bg-fill ~/builds/dotfiles/minimal-wallpaper/outrun.jpg
+exec --no-startup-id feh --bg-fill ~/builds/gentoo/wallpaper/outrun.jpg
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -25,7 +23,7 @@ bindsym $mod+Return exec --no-startup-id st
 
 # custom binds
 #bindsym $mod+Escape exec i3-instant-layout --list | rofi -dmenu -i
-bindsym $mod+b exec --no-startup-id firefox-bin
+bindsym $mod+b exec --no-startup-id google-chrome-stable
 bindsym $mod+n exec --no-startup-id thunar
 bindsym $mod+g exec --no-startup-id flatpak run net.lutris.Lutris
 
